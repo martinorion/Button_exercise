@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Button_exercise.Page1Xaml">
+    <ScrollView>
+        
+        <StackLayout Padding="35" Spacing="15">
+            <SearchBar x:Name=" search"  />
+
+            <Button x:Name="nextPageButton"
+                    Text="Super"
+                    TextColor="White"
+                    BackgroundColor="Black"
+                    BorderColor="DarkOrange"
+                    BorderWidth="3"
+                    BorderRadius="6"
+                    HeightRequest="50"
+                    Clicked="OnNextPageButtonClicked"/>
+            <Button x:Name="nextPageButtonA"
+                    Text="nie tak super"
+                    TextColor="White"
+                    BackgroundColor="Black"
+                    BorderColor="DarkOrange"
+                    BorderWidth="3"
+                    HeightRequest="50"
+                    BorderRadius="6"
+                    Clicked="OnNextPageButtonClickedA"/>
+
+            <Button x:Name="nextPageButtonB"
+                    Text="najlepšie"
+                    TextColor="White"
+                   BackgroundColor="Black"
+                    BorderColor="DarkOrange"
+                    BorderWidth="3"
+                    HeightRequest="50"
+                    BorderRadius="6"
+                    Clicked="OnNextPageButtonClickedB"/>
+
+            </StackLayout>
+            </ScrollView>
+</ContentPage>
