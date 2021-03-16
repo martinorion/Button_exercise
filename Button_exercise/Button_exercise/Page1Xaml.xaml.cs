@@ -26,9 +26,6 @@ namespace Button_exercise
         {
             await Navigation.PushAsync(new Page2Xaml());
         }
-        async void OnNextPageButtonClickedB(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new Page2Xaml());
-        }
+    
     }
 }
