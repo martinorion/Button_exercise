@@ -11,13 +11,13 @@ namespace Button_exercise
     {
         public Page1()
         {
-            var nextPageButton = new Button { Text = "Super", VerticalOptions = LayoutOptions.CenterAndExpand };
+            var nextPageButton = new Button { Text = "Na nič", VerticalOptions = LayoutOptions.CenterAndExpand };
             nextPageButton.Clicked += OnNextPageButtonClicked;
 
-            var nextPageButtonA = new Button { Text = "nie tak super", VerticalOptions = LayoutOptions.CenterAndExpand };
+            var nextPageButtonA = new Button { Text = "Nedobre", VerticalOptions = LayoutOptions.CenterAndExpand };
             nextPageButtonA.Clicked += OnNextPageButtonClickedA;
 
-            var nextPageButtonB = new Button { Text = "najlepšie", VerticalOptions = LayoutOptions.CenterAndExpand };
+            var nextPageButtonB = new Button { Text = "že si sa snažil", VerticalOptions = LayoutOptions.CenterAndExpand };
             nextPageButtonB.Clicked += OnNextPageButtonClickedB;
 
 			Title = "Príznaky";
