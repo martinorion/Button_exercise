@@ -3,39 +3,38 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Button_exercise.Page1Xaml">
     <ScrollView>
-        
-        <StackLayout Padding="35" Spacing="15">
-            <SearchBar x:Name=" search"  />
+        <FlexLayout Direction="Column"
+                    JustifyContent="SpaceEvenly"
+                    AlignItems="Center">
 
-            <Button x:Name="nextPageButton"
-                    Text="Super"
-                    TextColor="White"
-                    BackgroundColor="Black"
-                    BorderColor="DarkOrange"
-                    BorderWidth="3"
-                    BorderRadius="6"
-                    HeightRequest="50"
-                    Clicked="OnNextPageButtonClicked"/>
-            <Button x:Name="nextPageButtonA"
-                    Text="nie tak super"
-                    TextColor="White"
-                    BackgroundColor="Black"
-                    BorderColor="DarkOrange"
-                    BorderWidth="3"
-                    HeightRequest="50"
-                    BorderRadius="6"
-                    Clicked="OnNextPageButtonClickedA"/>
+            <Button Text="Basic Button Click"
+                    Command="{Binding NavigateCommand}"
+                    CommandParameter="{x:Type local:BasicButtonClickPage}" />
 
-            <Button x:Name="nextPageButtonB"
-                    Text="najlepšie"
-                    TextColor="White"
-                   BackgroundColor="Black"
-                    BorderColor="DarkOrange"
-                    BorderWidth="3"
-                    HeightRequest="50"
-                    BorderRadius="6"
-                    Clicked="OnNextPageButtonClickedB"/>
+            <Button Text="Code Button Click"
+                    Command="{Binding NavigateCommand}"
+                    CommandParameter="{x:Type local:CodeButtonClickPage}" />
 
-            </StackLayout>
-            </ScrollView>
+            <Button Text="Basic Button Command"
+                    Command="{Binding NavigateCommand}"
+                    CommandParameter="{x:Type local:BasicButtonCommandPage}" />
+
+            <Button Text="Press and Release Button"
+                    Command="{Binding NavigateCommand}"
+                    CommandParameter="{x:Type local:PressAndReleaseButtonPage}" />
+
+            <Button Text="Button Appearance"
+                    Command="{Binding NavigateCommand}"
+                    CommandParameter="{x:Type local:ButtonAppearancePage}" />
+
+            <Button Text="Toggle Button Demo"
+                    Command="{Binding NavigateCommand}"
+                    CommandParameter="{x:Type local:ToggleButtonDemoPage}" />
+
+            <Button Text="Image Button Demo"
+                    Command="{Binding NavigateCommand}"
+                    CommandParameter="{x:Type local:ImageButtonDemoPage}" />
+
+        </FlexLayout>
+    </ScrollView>
 </ContentPage>
